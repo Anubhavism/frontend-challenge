@@ -1,0 +1,65 @@
+body{
+	font-family: Roboto;
+	font-size: 15px;
+}
+.container{
+	width: 100%;
+	display: inline-block;
+
+}
+
+.side-nav{
+	width: 250px;
+	display: inline-block;
+	background-color: #d0d5dd;
+	text-align: center;
+	margin-top: 1%;
+	margin-left: 5%;
+	height: 600px;
+}
+.head-content{
+	padding: 15px;
+}
+.main-content{
+	width: 65%;
+	margin-left: 10%;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+}
+.nav-head{
+	background-color: #d65f28;
+	padding: 15px;
+}
+.disp{
+	display: none;
+}
+#donutchart{
+	width: 600px;
+	height: 600px;
+}
+
+body select {
+	display: block;
+	padding: 10px 70px 10px 13px !important; 
+	max-width: 100%; height: auto !important; 
+	border: 1px solid #e3e3e3; 
+	border-radius: 3px; 
+	background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat; 
+	background-color: #fff; 
+	color: #444444; 
+	font-size: 12px; 
+	line-height: 16px !important; 
+	appearance: none;
+	 -webkit-appearance: none; 
+	 -moz-appearance: none; 
+	 }
+body select option { 
+	 padding: 0 4px; 
+}
+a{
+	text-decoration: none;
+	color: #5082d3;
+}
+
+

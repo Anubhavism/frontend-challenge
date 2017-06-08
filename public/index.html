@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="mainCtrl">
+
+	<head>
+    
+        <title>Twitter trends test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	</head>
+    
+	<body>
+		<div class="container">
+			<div class="side-nav">
+				<div class="nav-head">
+					Select Countries
+				</div>
+				<div class="head-content">
+					<form name="myForm">
+						<select name="firstCountry" ng-model="firstCountry" ng-options="country for country in countries" ng-change="loadTrends()">
+							<option value="" class="disp">Please select one</option>
+						</select><br><br>
+						<select name="secondCountry" ng-model="secondCountry" ng-options="country for country in countries" ng-change="loadTrends()">
+							<option value="" class="disp">Please select one</option>
+						</select>
+					</form>
+				</div>
+				<div class="nav-head">
+					Common Trends
+				</div>
+				<div>
+					<a ng-repeat="trend in trends" ng-href="{{trend.url}}"><p>{{trend.name}}</p></a>
+				</div>
+			</div>
+			<div class="main-content">
+				<div id="donutchart"></div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+		<script src="myapp.js"></script>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+	</body>
+</html>
